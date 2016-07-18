@@ -323,9 +323,10 @@ public class GraphBuilderTopK extends GraphBuilder {
 
 	public static void main(String[] args) throws Exception {
 		
-		ServletContextParameterMap contextParameters = ContextParametersRegistry.getInstance().getContextParameters("/Users/mohsen/karma");
-		contextParameters.setParameterValue(ContextParameter.USER_CONFIG_DIRECTORY, "/Users/mohsen/karma/config");
+		ContextParametersRegistry.getInstance().getDefault().setParameterValue(ContextParameter.USER_DIRECTORY_PATH, "/Users/Gully/Documents/Projects/2_active/nifKarma/work/2016-05-kickoff/nifKarma/karmaWorkingDir");
 
+		ServletContextParameterMap contextParameters = ContextParametersRegistry.getInstance().getContextParameters("/");
+		contextParameters.setParameterValue(ContextParameter.USER_CONFIG_DIRECTORY, "/Users/Gully/Documents/Projects/2_active/nifKarma/work/2016-05-kickoff/nifKarma/karmaWorkingDir");
 
 		/** Check if any ontology needs to be preloaded **/
 		String preloadedOntDir = "/Users/mohsen/karma/preloaded-ontologies/";

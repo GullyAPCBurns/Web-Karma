@@ -554,7 +554,7 @@ function parse(data) {
 
 				$.each(errorArr, function(index, errorMessage) {
 					txt.append("<b>Error # " + (index + 1) + "</b><br>");
-					txt.append("<b>Description:</b> " + errorMessage.title + "<br>");
+					txt.append("<b>Description:</b> HERE WE ARE" + errorMessage.title + "<br>");
 					txt.append("<b>Reason:</b> " + errorMessage.description + "<br>");
 					txt.append("<hr>")
 				});
